@@ -1,6 +1,14 @@
 // components/login.js
 import React from "react";
-import {Text, View, StatusBar, TextInput, Alert, StyleSheet, Image} from "react-native";
+import {
+  Text,
+  View,
+  StatusBar,
+  TextInput,
+  Alert,
+  StyleSheet,
+  Image,
+} from "react-native";
 import axios from "axios";
 import Firebase from "../constants/FireBaseDb";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -50,7 +58,8 @@ const Login = ({ navigation }) => {
             } else {
               Firebase.app().firestore().collection("users").doc(email).set({
                 //Default user image (Torri)
-                picture: "https://rakkasans.s3.us-east-2.amazonaws.com/Torri_62c8d090ee.png",
+                picture:
+                  "https://rakkasans.s3.us-east-2.amazonaws.com/Torri_62c8d090ee.png",
                 userEmail: email,
                 username: response.data.user.username,
                 title: response.data.user["Title"],
