@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from "react"; 
 import * as Font from "expo-font";
 import { StatusBar } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
