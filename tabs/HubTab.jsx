@@ -66,11 +66,7 @@ export default function HubTab() {
           source={require("../assets/images/Torri.png")}
           style={{ width: 30, height: 30, top: "2%", paddingBottom: 5 }}
         />
-<<<<<<< Updated upstream
-        <Text style={[styles.maptext, Dimensions.font]}>3rd BDE AO</Text>
-=======
         <Text style={[styles.maptext, Dimensions.font]}>3rd BDE AO TEST</Text>
->>>>>>> Stashed changes
         <TouchableOpacity
           onPressIn={() => navigation.navigate("KMZ Map")}
           style={styles.map}
@@ -137,7 +133,7 @@ export default function HubTab() {
           />
         </View>
         <View style={styles.buttonView}>
-           <SquareButton
+          <SquareButton
             name="Video Posts"
             text="Videos"
             buttonSize={75}
@@ -187,12 +183,12 @@ export default function HubTab() {
             hubIcon={true}
           />
           <SquareButton
-             name="Creator"
-             text="Creator Page"
-             buttonSize={75}
-             textSize={11}
-             onPress={() => navigation.navigate("Creator Page")}
-             hubIcon={true}
+            name="Creator"
+            text="Creator Page"
+            buttonSize={75}
+            textSize={11}
+            onPress={() => navigation.navigate("Creator Page")}
+            hubIcon={true}
           />
         </View>
         <Button
