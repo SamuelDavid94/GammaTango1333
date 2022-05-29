@@ -66,7 +66,11 @@ export default function HubTab() {
           source={require("../assets/images/Torri.png")}
           style={{ width: 30, height: 30, top: "2%", paddingBottom: 5 }}
         />
+<<<<<<< Updated upstream
         <Text style={[styles.maptext, Dimensions.font]}>3rd BDE AO</Text>
+=======
+        <Text style={[styles.maptext, Dimensions.font]}>3rd BDE AO TEST</Text>
+>>>>>>> Stashed changes
         <TouchableOpacity
           onPressIn={() => navigation.navigate("KMZ Map")}
           style={styles.map}
